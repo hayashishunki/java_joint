@@ -12,10 +12,10 @@ class test1 {
 		System.out.print("あなたのお名前は: ");
 		String name = scanner.next();
 		if (name != null) {
-			int num = random.nextInt(4);
+			int luckyNo = random.nextInt(4);
 			System.out.println("こんにちは" + name + "さん");
 			System.out.print("あなたの運勢は: ");
-			switch (num) {
+			switch (luckyNo) {
 			case 0:
 				System.out.println("大吉です");
 				break;
@@ -29,9 +29,7 @@ class test1 {
 				System.out.println("凶です");
 				break;
 			}
-		} else {
-			System.out.println("エラーですよ");
 		}
-
+		scanner.close();
 	}
 }

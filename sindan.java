@@ -3,9 +3,9 @@ package java_joint;
 import java.util.Random;
 import java.util.Scanner;
 
-public class sindan {
-
-	public static void main(String[] args) {
+public class Sindan {
+	
+	public void Divination() {
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 		Humans human = new Humans();
@@ -17,35 +17,24 @@ public class sindan {
 			System.out.print("あなたのお名前は: ");
 			human.setName(scanner.next());
 			System.out.print(human.getName() + "さんの運勢は・・・");
-			int rand = random.nextInt(10);
+			int rand = random.nextInt(4);
+			human.setLuckResult(rand);
 			switch(rand) {
 			case 0:
-				System.out.println("大吉");
+				System.out.print("大吉");
 				break;
 			case 1:
-				System.out.println("中吉");
+				System.out.print("中吉");
 				break;
 			case 2:
-				System.out.println("小吉");
+				System.out.print("小吉");
 				break;
 			default :
-				System.out.println("凶");
+				System.out.print("凶");
 				break;
 			}
+			System.out.print("(" + human.getLuckNo() + ")\n");
 		}	
 		scanner.close();
 	}
-
 }
-/** 
- * 
- * 使用書
- * 
- * ランダムな値を用意(10個のランダム数字)
- * ランダム値を人数分用意(ランダム数値が０だった場合は大吉, １中吉, ２小吉, ３凶)
- * 結果
- * 何々さんの名前・・・を出力する。
- * 占いに来た人数分入力します
- * 人数分の個情報を入力させて、インスタンス化させます
- * 
- * */

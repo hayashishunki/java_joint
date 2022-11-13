@@ -28,9 +28,7 @@ public class Humans {
 	}
 	
 	public String[] getInformation() {
-		for(int i = 0; i < information.length;i++) {
-			return this.information[i];
-		}
+			return this.information;
 	}
 	public void setInformation(String name, int age, String birsday) {
 		this.information[0] = name;

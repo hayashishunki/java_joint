@@ -20,10 +20,8 @@ public class Main {
 		System.out.println(carArray[1].getName());
 		System.out.println(carArray[1].getBodyNo());
 		
-//				sindan.Divination();
-		}
+		sindan.Divination();
 	}
-
 }
 /** 
  * 
@@ -44,5 +42,7 @@ public class Main {
  * 起動初期処理で名前を決め、それを持たせる
  * 配列用意する(くるまの名前あり)４回ループ処理させて車体番号は回数分の結果でよし
  * インスタンス化する
+ * 
+ * 
  * 
  * */

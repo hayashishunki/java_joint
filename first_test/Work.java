@@ -21,4 +21,10 @@ public class Work {
 		human.setInformation(human.getName(), human.getAge(), human.getBirsday());
 		System.out.println(human.getInformation()[1]);
 	}
+	
+	public String[] forMan(String[] information) {
+		for(int i = 0;i < 3;i++) {
+			return information[i];
+		}
+	}
 }
